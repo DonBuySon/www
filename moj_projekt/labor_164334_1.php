@@ -1,6 +1,6 @@
 <?php
 // zadanie 1
-$nr_indeksu = '164344';
+$nr_indeksu = '164334';
 $nrGrupy = '1';
 echo 'Łukasz ' . $nr_indeksu . ' grupa ' . $nrGrupy . ' <br /><br />';
 // zadanie 2
