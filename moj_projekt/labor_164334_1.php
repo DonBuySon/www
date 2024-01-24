@@ -2,7 +2,7 @@
 // zadanie 1
 $nr_indeksu = '164334';
 $nrGrupy = '1';
-echo 'Łukasz ' . $nr_indeksu . ' grupa ' . $nrGrupy . ' <br /><br />';
+echo 'Jakub ' . $nr_indeksu . ' grupa ' . $nrGrupy . ' <br /><br />';
 // zadanie 2
 echo 'Zadanie 2 <br />';
 echo 'Zastosowanie metody include() <br />';
