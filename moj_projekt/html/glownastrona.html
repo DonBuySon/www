@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<table>
+	<tr>
+		<td id="ed1">
+			<h1>Strona główna</h1>
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td>
+			<div id="animacjaTestowal" class="test-block">Kliknij, a się powiększe</div>
+			<script>
+				$("#animacjaTestowal").on("click", function(){
+					$(this).animate({
+						width: "500px",
+						opacity: 0.4,
+						fontsize: "3em", 
+						borderwidth: "10px"
+					}, 1500);
+				});
+			</script>
+		</td>
+		<td>
+		
+			<div id="animacjaTestowa2" class="test-block"> Najedź kursorem, a się powiększe</div>
+			<script>
+				$("#animacjaTestowa2").on({
+					"mouseover": function() {
+						$(this).animate({
+							width: 300
+						}, 800);
+					},
+					"mouseout" : function() {
+						$(this).animate({ 
+						width: 200
+					}, 800);
+				}
+			});
+			</script>
+		</td>
+		<td>
+			<div id="animacjaTestowa3" class="test-block"> Klikaj, abym urósł</div>
+			<script>
+				$("#animacjaTestowa3").on("click", function(){
+					if (!$(this).is(":animated")) {
+						$(this).animate({
+							width: "+=" + 50,
+							height: "+=" + 10,
+							opacity: "-=" + 0.1,
+							duration: 3000
+						});
+					}
+				});
+			</script>
+		</td>
+	</tr>
+</table>
+<table>
+    <tr>
+        <td id="ed1">
+            <h1>Witaj na stronie o moich hobby!</h1>
+            <p>Nazywam się Jakub,a tutaj znajdziesz informacje na temat różnych dziedzin, które mnie interesują. Owe rzeczy możecie znaleźć w menu. Zapraszam do oglądania.</p>
+        </td>
+    </tr>
+	 <tr>
+        <td>
+            <div class="image-container">
+                <img src="images/music.jpg" alt="Muzyka">
+                <div class="overlay">
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+<table>
+	<tr>
+		<td><FORM METHOD="POST" NAME="background"></td>
+		<td><INPUT TYPE="button" VALUE="żółty" ONCLICK="changeBackground('#FFF000')"></td>
+		<td><INPUT TYPE="button" VALUE="czarny" ONCLICK="changeBackground('#000000')"></td>
+		<td><INPUT TYPE="button" VALUE="biały" ONCLICK="changeBackground('#FFFFFF')"></td>
+		<td><INPUT TYPE="button" VALUE="zielony" ONCLICK="changeBackground('#00FF00')"></td>
+		<td><INPUT TYPE="button" VALUE="niebieski" ONCLICK="changeBackground('#0000FF')"></td>
+		<td><INPUT TYPE="button" VALUE="pomarańczowy" ONCLICK="changeBackground('#FF8000')"></td>
+		<td><INPUT TYPE="button" VALUE="szary" ONCLICK="changeBackground('#c0c0c0')"></td>
+		<td><INPUT TYPE="button" VALUE="czerwony" ONCLICK="changeBackground('#FF0000')">
+		<td></FORM></td>
+	</tr>
+</table>
+<table>
+	<td>
+	</td>
+</table>
