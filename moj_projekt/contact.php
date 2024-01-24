@@ -99,6 +99,6 @@ function generateRandomPassword($length = 8)
 
 PokazKontakt();
 if (isset($_POST['submit_contact'])) {
-    WyslijMailKontakt('164344@student.uwm.edu.pl');
+    WyslijMailKontakt('jakub.balisnki@matman.uwm.edu.pl');
 }
 PrzypomnijHaslo();
